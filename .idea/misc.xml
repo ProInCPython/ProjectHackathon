@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Student/AndroidStudioProjects/ProjectHackathon/app/src/main/res/drawable-v24/round_arrow_back_ios_24.xml" value="0.2638888888888889" />
         <entry key="..\:/Users/Student/AndroidStudioProjects/ProjectHackathon/app/src/main/res/drawable/round_bottom.xml" value="0.2740740740740741" />
         <entry key="..\:/Users/Student/AndroidStudioProjects/ProjectHackathon/app/src/main/res/font/montserrat.xml" value="0.2740740740740741" />
         <entry key="..\:/Users/Student/AndroidStudioProjects/ProjectHackathon/app/src/main/res/layout/activity_app.xml" value="0.25252525252525254" />
@@ -22,6 +23,8 @@
         <entry key="..\:/Users/Student/AndroidStudioProjects/ProjectHackathon/app/src/main/res/layout/fragment_scroll_bar.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Student/AndroidStudioProjects/ProjectHackathon/app/src/main/res/layout/fragment_settings.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Student/AndroidStudioProjects/ProjectHackathon/app/src/main/res/layout/item.xml" value="0.33" />
+        <entry key="..\:/Users/Student/AndroidStudioProjects/ProjectHackathon/app/src/main/res/layout/round_arrow_back_ios_24.xml" value="0.33967391304347827" />
+        <entry key="..\:/Users/Student/AndroidStudioProjects/ProjectHackathon/app/src/main/res/layout/route_activity.xml" value="0.33967391304347827" />
         <entry key="..\:/Users/Student/AndroidStudioProjects/ProjectHackathon/app/src/main/res/menu/my_navigation_items.xml" value="0.36666666666666664" />
       </map>
     </option>

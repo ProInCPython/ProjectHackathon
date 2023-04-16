@@ -1,124 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/consts"
     xmlns:tools="http://schemas.android.com/tools"
-    app:cardCornerRadius="20dp"
-    android:background="#B9BCB9"
-    android:layout_margin="5dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
 
-    <RelativeLayout
+
+    <ImageView
+        android:id="@+id/photo_route"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:src="@drawable/test"
+        app:layout_constraintBottom_toTopOf="@id/gl"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Space
+        android:id="@+id/gl"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/photo_route"
+        />
 
+    <ImageButton
+        android:layout_width="@dimen/_40ssp"
+        android:layout_height="@dimen/_40ssp"
+        android:background="@drawable/round_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="@+id/name_route"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="@+id/photo_route"
+        app:layout_constraintTop_toTopOf="@+id/photo_route"
+        app:layout_constraintVertical_bias="0.111" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/frame1"
-            android:layout_width="match_parent"
-            android:layout_height="250dp" />
-
-        <TextView
-            android:elevation="30dp"
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Название"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:paddingBottom="4dp"/>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_below="@id/frame1"
-            android:layout_width="match_parent"
-            android:layout_height="250dp">
-
-
-
-        </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:elevation="30dp"
-            android:id="@+id/description"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Краткое описание"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:paddingBottom="4dp"/>
-
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/name_route"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:fontFamily="@font/montserrat"
+        android:text="Маршрут Измайлово"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/photo_route"
+        app:layout_constraintBottom_toBottomOf="@id/photo_route"
+        app:layout_constraintLeft_toLeftOf="@id/photo_route"
+        app:layout_constraintRight_toRightOf="@id/photo_route"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.1"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/show_in_maps"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"
-        android:text="Посмотреть на карте"
-        android:textColor="@color/black"
-        android:textAllCaps="false"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:cornerRadius="@dimen/_8ssp"
-        android:layout_alignParentBottom="true" />
+        android:id="@+id/showInMaps"
+        android:layout_width="140dp"
+        android:background="@drawable/round_bottom"
+        android:layout_height="30dp"
+        android:textSize="13sp"
+        android:text="Посмотреть маршрут на карте"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/photo_route" />
 
 
-
-<!--    <RelativeLayout-->
-<!--        android:id="@+id/item"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:padding="10dp">-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/route_picture"-->
-<!--            android:layout_width="100dp"-->
-<!--            android:layout_height="100dp"-->
-<!--            android:src="@drawable/goldengate"/>-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/love_button"-->
-<!--            android:layout_width="50dp"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:layout_below="@id/route_picture"-->
-<!--            android:layout_marginTop="-24dp"-->
-<!--            android:layout_marginLeft="70dp"-->
-<!--            android:src="@drawable/love" />-->
-
-
-
-<!--        <FrameLayout-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@id/title"-->
-<!--            android:layout_toRightOf="@id/route_picture"-->
-<!--            android:layout_marginLeft="30dp">-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/description"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                tools:text="Краткое описание"-->
-
-<!--                android:textSize="15sp"-->
-<!--                android:textColor="@color/black" />-->
-
-<!--        </FrameLayout>-->
-
-
-
-
-
-<!--    </RelativeLayout>-->
-
-
-
-</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

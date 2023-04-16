@@ -77,7 +77,7 @@ public class MapActivity extends AppCompatActivity {
         MyWebViewClient webViewClient = new MyWebViewClient();
         webView.setWebViewClient(webViewClient);
 //        // указываем страницу загрузки
-        webView.loadUrl("https://yandex.ru/maps/-/CCU84IX5kD");
+        webView.loadUrl("https://yandex.ru/maps/-/CCU84QxUdD");
 
     }
 

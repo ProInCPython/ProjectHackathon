@@ -3,13 +3,13 @@ package com.company.projecthackathon.domain;
 import java.util.ArrayList;
 
 public class User {
-    private int id;
+    private long id;
     private String email;
     private String name;
     private String password;
     private ArrayList<String> favourites;
 
-    public User(int id, String email, String name, String password, ArrayList<String> favourites) {
+    public User(long id, String email, String name, String password, ArrayList<String> favourites) {
         this.id = id;
         this.email = email;
         this.name = name;
@@ -49,7 +49,7 @@ public class User {
         this.favourites = favourites;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

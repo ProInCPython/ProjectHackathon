@@ -2,8 +2,6 @@ package com.company.projecthackathon;
 
 import android.app.Application;
 
-import com.yandex.mapkit.MapKitFactory;
-
 public class App extends Application {
     @Override
     public void onCreate() {

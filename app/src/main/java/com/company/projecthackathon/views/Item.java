@@ -6,7 +6,7 @@ public class Item {
     private String title;
     private String description;
     public boolean isLiked;
-    private int id;
+    public int id;
 
     private int route_picture_resource;
     public int heart_picture_resource = R.drawable.love;

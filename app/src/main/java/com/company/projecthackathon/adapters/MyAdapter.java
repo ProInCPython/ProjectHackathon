@@ -48,6 +48,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), RouteDescriptionActivity.class);
+                intent.putExtra("id", state.id);
                 holder.item.getContext().startActivity(intent);
             }
         });

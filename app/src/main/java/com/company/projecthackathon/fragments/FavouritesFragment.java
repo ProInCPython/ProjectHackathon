@@ -1,9 +1,11 @@
 package com.company.projecthackathon.fragments;
 
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,7 +17,9 @@ import com.company.projecthackathon.R;
 import com.company.projecthackathon.adapters.MyAdapter2;
 import com.company.projecthackathon.databinding.FragmentFavouritesBinding;
 import com.company.projecthackathon.views.Item;
+import com.squareup.picasso.Picasso;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,6 +51,7 @@ public class FavouritesFragment extends Fragment {
     }
 
     private void setInitialData(){
+
 
         data.add(new Item("Название", "Простое описание", R.drawable.test, false, R.drawable.heart_clicked, 1));
         data.add(new Item("Название", "Простое описание", R.drawable.test, false, R.drawable.heart_clicked, 2));

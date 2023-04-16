@@ -18,11 +18,14 @@ public class RouteDescriptionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityDescriptionRouteBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        binding.photoRoute.setImageResource(R.drawable.test);
 
         binding.showInMaps.setOnClickListener(view -> {
             Intent intent = new Intent(this, MapActivity.class);
             startActivity(intent);
         });
+
+
 
 
     }
